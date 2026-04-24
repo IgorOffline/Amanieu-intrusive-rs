@@ -1032,7 +1032,7 @@ where
                     adapter: self.list.adapter.clone(),
                 };
                 if let Some(tail) = list.tail {
-                    self.list.adapter.link_ops_mut().set_prev(tail, None);
+                    self.list.adapter.link_ops_mut().set_next(tail, None);
                 } else {
                     list.head = None;
                 }
